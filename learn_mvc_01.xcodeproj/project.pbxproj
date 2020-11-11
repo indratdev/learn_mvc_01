@@ -13,6 +13,9 @@
 		8F58F99B255C35720035BB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F58F999255C35720035BB99 /* Main.storyboard */; };
 		8F58F99D255C35740035BB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F58F99C255C35740035BB99 /* Assets.xcassets */; };
 		8F58F9A0255C35740035BB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F58F99E255C35740035BB99 /* LaunchScreen.storyboard */; };
+		8F58F9AC255C3A4D0035BB99 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58F9AB255C3A4D0035BB99 /* MyTableViewCell.swift */; };
+		8F58F9AE255C3AF70035BB99 /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58F9AD255C3AF70035BB99 /* MVCModel.swift */; };
+		8F58F9B0255C3F0B0035BB99 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58F9AF255C3F0B0035BB99 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8F58F99C255C35740035BB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F58F99F255C35740035BB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F58F9A1255C35740035BB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F58F9AB255C3A4D0035BB99 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		8F58F9AD255C3AF70035BB99 /* MVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
+		8F58F9AF255C3F0B0035BB99 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		8F58F992255C35720035BB99 /* learn_mvc_01 */ = {
 			isa = PBXGroup;
 			children = (
+				8F58F9AA255C38E80035BB99 /* Services */,
+				8F58F9A9255C35C50035BB99 /* Controller */,
+				8F58F9A8255C35C00035BB99 /* View */,
+				8F58F9A7255C35B90035BB99 /* Model */,
 				8F58F993255C35720035BB99 /* AppDelegate.swift */,
 				8F58F995255C35720035BB99 /* SceneDelegate.swift */,
-				8F58F997255C35720035BB99 /* ViewController.swift */,
 				8F58F999255C35720035BB99 /* Main.storyboard */,
 				8F58F99C255C35740035BB99 /* Assets.xcassets */,
 				8F58F99E255C35740035BB99 /* LaunchScreen.storyboard */,
 				8F58F9A1255C35740035BB99 /* Info.plist */,
 			);
 			path = learn_mvc_01;
+			sourceTree = "<group>";
+		};
+		8F58F9A7255C35B90035BB99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F58F9AD255C3AF70035BB99 /* MVCModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F58F9A8255C35C00035BB99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F58F9AB255C3A4D0035BB99 /* MyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F58F9A9255C35C50035BB99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F58F997255C35720035BB99 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F58F9AA255C38E80035BB99 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F58F9AF255C3F0B0035BB99 /* Service.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F58F998255C35720035BB99 /* ViewController.swift in Sources */,
+				8F58F9AE255C3AF70035BB99 /* MVCModel.swift in Sources */,
+				8F58F9AC255C3A4D0035BB99 /* MyTableViewCell.swift in Sources */,
 				8F58F994255C35720035BB99 /* AppDelegate.swift in Sources */,
 				8F58F996255C35720035BB99 /* SceneDelegate.swift in Sources */,
+				8F58F9B0255C3F0B0035BB99 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
